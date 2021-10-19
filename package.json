@@ -1,7 +1,7 @@
 {
 	"name": "react-image-design-editor",
 	"version": "0.0.1",
-	"description": "Design Editor Tools with React.js + ant.design + fabric.js",
+	"description": "Component for react to design images",
 	"main": "dist/react-design-editor.min.js",
 	"typings": "lib/index.d.ts",
 	"files": [
