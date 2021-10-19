@@ -797,7 +797,7 @@ class ImageMapEditor extends Component {
 				/>
 			</div>
 		);
-		return <Container title={title} content={content} loading={loading} className="" />;
+		return <Container title={title} content={content} loading={loading}/>;
 	}
 }
 

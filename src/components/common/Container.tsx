@@ -18,35 +18,33 @@ class Container extends Component<IProps> {
 		content: PropTypes.any,
 		rightSider: PropTypes.any,
 		className: PropTypes.string,
-		loading: PropTypes.bool,
 	};
 
 	static defaultProps = {
 		className: 'rde-content-layout-main',
-		loading: false,
 	};
 
 	render() {
-		const { title, leftSider, content, rightSider, className, loading, children } = this.props;
+		const { title, leftSider, content, rightSider, className } = this.props;
 		return (
-			<Spin spinning={loading}>
-				<Layout className="rde-content-layout">
-					{title}
-					<Layout
-						style={{
-							overflowY: 'auto',
-							overflowX: 'hidden',
-							minHeight: `calc(100vh - ${title ? 98 : 60}px)`,
-							height: `calc(100vh - ${title ? 98 : 60}px)`,
-						}}
-						className={className}
-					>
-						{leftSider}
-						{content || children}
-						{rightSider}
-					</Layout>
+			<Layout className="rde-content-layout">
+				{title}
+				<Layout
+					style={{
+						overflowY: 'auto',
+						overflowX: 'hidden',
+						//height: '100%',
+						//minHeight: '100%',
+						minHeight: `calc(100vh - ${title ? 98 : 60}px)`,
+						height: `calc(100vh - ${title ? 98 : 60}px)`,
+					}}
+					className={className}
+				>
+					{leftSider}
+					{content}
+					{rightSider}
 				</Layout>
-			</Spin>
+			</Layout>
 		);
 	}
 }
