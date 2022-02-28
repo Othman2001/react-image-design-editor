@@ -19,8 +19,7 @@
 		"lint": "npm run tsc",
 		"clean": "node scripts/clean",
 		"tsc": "tsc",
-		"typedoc": "typedoc",
-		"install": "npm install"
+		"typedoc": "typedoc"
 	},
 	"repository": {
 		"type": "git",
