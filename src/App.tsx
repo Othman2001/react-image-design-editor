@@ -1,11 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
-import ProductEditor from "./editor/containers/ProductEditor";
+import ImageEditorContainer from "./editor/containers/ImageEditorContainer";
 
 function App() {
   return (
     <div className="App">
-      <ProductEditor />
+      <ImageEditorContainer />
     </div>
   );
 }
